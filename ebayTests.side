@@ -1,0 +1,327 @@
+{
+  "id": "0103235b-9c8d-4b7a-80ed-f1d540a5cb9c",
+  "version": "2.0",
+  "name": "ebayTests",
+  "url": "https://www.ebay.ca",
+  "tests": [{
+    "id": "333f8316-ca6c-4002-ad92-25e54fbb003a",
+    "name": "addToCart",
+    "commands": [{
+      "id": "630e7a7d-b45f-4aab-8634-be0b66ed9bd9",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.ca/itm/353416562260",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0b1b2bf-a3c5-48de-8b5d-58e8c73eaabb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8112c080-5a47-43ec-9309-7419b3452ec4",
+      "comment": "",
+      "command": "click",
+      "target": "id=x-msku__select-box-1000",
+      "targets": [
+        ["id=x-msku__select-box-1000", "id"],
+        ["css=#x-msku__select-box-1000", "css:finder"],
+        ["xpath=//select[@id='x-msku__select-box-1000']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[5]/div/label/span[2]/select", "xpath:idRelative"],
+        ["xpath=//span[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66d166bc-ed55-4967-bf8d-bf024e624c0a",
+      "comment": "",
+      "command": "select",
+      "target": "id=x-msku__select-box-1000",
+      "targets": [],
+      "value": "label=Luxe Silver"
+    }, {
+      "id": "20f5916e-4d1e-40f9-9768-19f5d35d76eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.x-atc-action .ux-call-to-action__text",
+      "targets": [
+        ["css=.x-atc-action .ux-call-to-action__text", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div[2]/ul/li[2]/div/a/span/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ec8a88d-1d0c-4c46-8342-f8a65738f542",
+      "comment": "Assert route to cart page after adding item",
+      "command": "assertTitle",
+      "target": "eBay shopping cart",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59d5cb71-e4f2-4f67-a463-29802bed9b41",
+      "comment": "Assert that cart-app element is present",
+      "command": "assertElementPresent",
+      "target": "id=cart-app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58ab81a0-a689-4dd8-81fd-005d46961e05",
+      "comment": "Assert buy it now button is not present",
+      "command": "assertElementNotPresent",
+      "target": "id=binBtn_btn_1",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e3126440-ee79-4578-b1c9-6dc0154be8cd",
+    "name": "invalidAddToCart",
+    "commands": [{
+      "id": "598d2c5a-259d-45a6-bc39-62e7f0952a50",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.ca/itm/162228927728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afd246ee-e1f9-4b91-8f33-280213939805",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ee1c4c7-ee2b-4440-b270-a94fa54e5668",
+      "comment": "",
+      "command": "click",
+      "target": "id=qtyTextBox",
+      "targets": [
+        ["id=qtyTextBox", "id"],
+        ["name=quantity", "name"],
+        ["css=#qtyTextBox", "css:finder"],
+        ["xpath=//input[@id='qtyTextBox']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[4]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "feddb7eb-5cde-4462-93d5-97fe294ceb3d",
+      "comment": "",
+      "command": "type",
+      "target": "id=qtyTextBox",
+      "targets": [
+        ["id=qtyTextBox", "id"],
+        ["name=quantity", "name"],
+        ["css=#qtyTextBox", "css:finder"],
+        ["xpath=//input[@id='qtyTextBox']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[4]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "0140e0ef-0a3b-4dbb-9326-b1079b3b4f9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.x-label",
+      "targets": [
+        ["css=.x-label", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b70cbdf9-ca69-4da0-8113-a628e3acb914",
+      "comment": "",
+      "command": "click",
+      "target": "css=.x-atc-action .ux-call-to-action__text",
+      "targets": [
+        ["css=.x-atc-action .ux-call-to-action__text", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div[2]/ul/li[2]/div/a/span/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09da478d-2cc1-454c-a3a3-6136e3046144",
+      "comment": "Assert that we are still on item page after invalid add to cart",
+      "command": "assertTitle",
+      "target": "Dyson Official Outlet - AM09 Hot+Cool Heater and Cooling Fan, Refurbished | eBay",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "807aa9c2-79da-484c-ad01-902cf00b5c59",
+      "comment": "Assert buy it now button is still present",
+      "command": "assertElementPresent",
+      "target": "id=binBtn_btn_1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd3c2b2e-b13d-4a6e-82cc-f4fa1b1783ae",
+      "comment": "Assert that cart-app element is not present",
+      "command": "assertElementNotPresent",
+      "target": "id=cart-app",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bfe45257-c8f6-4833-be99-227cbe82cd4f",
+    "name": "search",
+    "commands": [{
+      "id": "581d9230-c74a-433d-84c4-7bd28d1b31b7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b445e3a-1fd2-4373-925f-711b37cc397b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1055",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21582dfc-963a-4b67-aadc-53a3f615b094",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-wrap']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9be9db95-1b27-4bb9-b4f7-7413f2c1fbfe",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-wrap']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "laptop"
+    }, {
+      "id": "7a0c60c8-fb08-4410-a1fe-d276bc5992dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gh-search-button__label",
+      "targets": [
+        ["css=.gh-search-button__label", "css:finder"],
+        ["xpath=//button[@id='gh-search-btn']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14cc22b1-52f5-48e3-9cd0-12f3fa638a5b",
+      "comment": "Assert that \"No exact matches found\" does not populate",
+      "command": "assertElementNotPresent",
+      "target": "css=h3.srp-save-null-search__heading",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "244bf862-49b1-4be1-9b48-e3dabda73829",
+      "comment": "Assert the option carousel gets populated",
+      "command": "assertElementPresent",
+      "target": "css=.srp-river-answer.srp-river-answer--NAVIGATION_ANSWER_COLLAPSIBLE_CAROUSEL",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cb2dab1a-71f7-47cf-8c3d-2f3afefa5d58",
+    "name": "invalidSearch",
+    "commands": [{
+      "id": "0bd8850c-1915-4e4d-af82-1927ed42e805",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2ce4bfa-e678-4fed-81ea-4da1e6d157ea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1055",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f81b41f-e6da-4bff-9f61-5c54ff3b52d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-wrap']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ec5dbc5-4c98-4d1e-a254-42148c4c55bf",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-wrap']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "abc123abcyouandme"
+    }, {
+      "id": "41c8769a-f0df-4d8c-a527-233358fd83ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gh-search-button__label",
+      "targets": [
+        ["css=.gh-search-button__label", "css:finder"],
+        ["xpath=//button[@id='gh-search-btn']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "011c9695-1600-47d0-8f63-6aa6c114d622",
+      "comment": "Assert that \"No exact matches found\" page populates",
+      "command": "assertElementPresent",
+      "target": "css=h3.srp-save-null-search__heading",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06f996eb-f353-43d2-bc52-491e396e9221",
+      "comment": "Assert that there are 0 results for search",
+      "command": "assertText",
+      "target": "css=h1.srp-controls__count-heading",
+      "targets": [],
+      "value": "0 results for abc123abcyouandme"
+    }, {
+      "id": "b4c64342-b817-4f91-a134-c0a5215bf4ac",
+      "comment": "Assert that no option carousel gets populated",
+      "command": "assertElementNotPresent",
+      "target": "css=.srp-river-answer.srp-river-answer--NAVIGATION_ANSWER_COLLAPSIBLE_CAROUSEL",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5ae14abf-fc1c-42bd-b203-ead881b6d139",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["333f8316-ca6c-4002-ad92-25e54fbb003a"]
+  }],
+  "urls": ["https://www.ebay.ca/itm/353416562260", "https://www.ebay.ca/itm/162228927728", "https://www.ebay.ca/"],
+  "plugins": []
+}
