@@ -2,7 +2,7 @@
   "id": "0103235b-9c8d-4b7a-80ed-f1d540a5cb9c",
   "version": "2.0",
   "name": "ebayTests",
-  "url": "https://www.ebay.ca",
+  "url": "https://www.ebay.ca/itm/124065614031",
   "tests": [{
     "id": "333f8316-ca6c-4002-ad92-25e54fbb003a",
     "name": "addToCart",
@@ -313,6 +313,324 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "455153fd-109d-4337-b157-208e1bc550fb",
+    "name": "viewItemPage",
+    "commands": [{
+      "id": "ac8b783d-fd37-45c4-85e0-5c44f0c3142b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.ca/itm/335291084255",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb4df63c-0b3e-448a-9b9f-da3baebfa247",
+      "comment": "assert title exists",
+      "command": "assertTitle",
+      "target": "Lenovo 500w Gen 3 Laptop, 11.6\" IPS Glass, N6000, 8GB, 128GB SSD, Win 11 Home | eBay",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1b952cc-920f-412c-96a3-4a97b0def912",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.active .ux-image-magnify__image--original",
+      "targets": [
+        ["css=.active .ux-image-magnify__image--original", "css:finder"],
+        ["xpath=//img[@alt='Lenovo 500w Gen 3 Laptop, 11.6\" IPS  Glass, N6000, 8GB, 128GB SSD, Win 11 Home - Picture 1 of 10']", "xpath:img"],
+        ["xpath=//div[@id='mainImgHldr']/div/div[3]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "06e5c367-9ad3-4ec2-80b8-783bd0cc92b8",
+    "name": "invalidViewItemPage",
+    "commands": [{
+      "id": "074111ee-b4b4-4ae0-a1af-0b8d3cd7c99f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.ca/itm/335291084255sdfg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "849ac406-0737-4644-9a83-4ba937652811",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Error Page | eBay",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fdea4726-cda6-497b-8897-8e5a9af5517d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.error-header__headline",
+      "targets": [
+        ["css=.error-header__headline", "css:finder"],
+        ["xpath=//div[@id='wrapper']/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'We looked everywhere.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c891aef-9716-4303-b41a-2973eaf620a0",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.active .ux-image-magnify__image--original",
+      "targets": [
+        ["css=.active .ux-image-magnify__image--original", "css:finder"],
+        ["xpath=//img[@alt='Lenovo 500w Gen 3 Laptop, 11.6\" IPS  Glass, N6000, 8GB, 128GB SSD, Win 11 Home - Picture 1 of 10']", "xpath:img"],
+        ["xpath=//div[@id='mainImgHldr']/div/div[3]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03caacd1-18d8-4f56-8ce0-b7b8fd2f09f1",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "83111bd8-92be-41ce-b31a-696596f6efda",
+    "name": "buyItNow",
+    "commands": [{
+      "id": "7c6828d6-81f7-41c3-b1b4-727370714bd1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.ca/itm/124065614031",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f21f68d6-c6f1-4b85-b7c0-58d8721638af",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x944",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50c96278-d879-438a-ad81-223f29fd7c3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-quantity",
+      "targets": [
+        ["css=.d-quantity", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div[6]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "170baf82-233e-456d-8a7a-900f19c6818b",
+      "comment": "",
+      "command": "click",
+      "target": "id=x-msku__select-box-1000",
+      "targets": [
+        ["id=x-msku__select-box-1000", "id"],
+        ["css=#x-msku__select-box-1000", "css:finder"],
+        ["xpath=//select[@id='x-msku__select-box-1000']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[5]/div/label/span[2]/select", "xpath:idRelative"],
+        ["xpath=//span[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2f0d4ab-3e3c-403d-af72-945e63e25d1f",
+      "comment": "",
+      "command": "select",
+      "target": "id=x-msku__select-box-1000",
+      "targets": [],
+      "value": "label=x1"
+    }, {
+      "id": "8625a6e7-2e5c-4a12-8741-10ef6f664274",
+      "comment": "",
+      "command": "click",
+      "target": "id=qtyTextBox",
+      "targets": [
+        ["id=qtyTextBox", "id"],
+        ["name=quantity", "name"],
+        ["css=#qtyTextBox", "css:finder"],
+        ["xpath=//input[@id='qtyTextBox']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[6]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b1b77bf-0a18-445d-851d-913198a99621",
+      "comment": "",
+      "command": "type",
+      "target": "id=qtyTextBox",
+      "targets": [
+        ["id=qtyTextBox", "id"],
+        ["name=quantity", "name"],
+        ["css=#qtyTextBox", "css:finder"],
+        ["xpath=//input[@id='qtyTextBox']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[6]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "58787027-24df-4130-b05f-7d4c27cecdc2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#binBtn_btn_1 .ux-call-to-action__text",
+      "targets": [
+        ["css=#binBtn_btn_1 .ux-call-to-action__text", "css:finder"],
+        ["xpath=//a[@id='binBtn_btn_1']/span/span", "xpath:idRelative"],
+        ["xpath=//li/div/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4db1a45e-f531-48f7-833d-c91fe8780609",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Sign in to check out",
+      "targets": [
+        ["linkText=Sign in to check out", "linkText"],
+        ["css=.ux-bin-nudge__signInCheckOut > .ux-call-to-action", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div[2]/ul/li/div/div/div/div[2]/div[3]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ebay.ca/atc/binctr?item=124065614031&quantity=1&var=424896252863&fromPage=4429486&rev=38&fb=1&gch=1&hideGxo=1&_trksid=p4429486.m2548.l44296')]", "xpath:href"],
+        ["xpath=//div/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in to check out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2d93aba-0f34-430b-9a96-da065d6e31a3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.keyboard-trap--active",
+      "targets": [
+        ["css=.keyboard-trap--active", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div[2]/ul/li/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//li/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "de73a805-6bff-46b9-bd53-8f4c4a41bacc",
+    "name": "invalidBuyItNow",
+    "commands": [{
+      "id": "eaa5abde-381d-4806-a07f-7f38a2fcc7c8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.ca/itm/124065614031",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3b3e66b-5313-43a6-a7ca-fcd66d14fa38",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x944",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbac7a17-2988-476e-98f2-8845eb7e392c",
+      "comment": "",
+      "command": "click",
+      "target": "id=x-msku__select-box-1000",
+      "targets": [
+        ["id=x-msku__select-box-1000", "id"],
+        ["css=#x-msku__select-box-1000", "css:finder"],
+        ["xpath=//select[@id='x-msku__select-box-1000']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[5]/div/label/span[2]/select", "xpath:idRelative"],
+        ["xpath=//span[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c42cb149-c895-4294-9839-94209a0b7c89",
+      "comment": "",
+      "command": "select",
+      "target": "id=x-msku__select-box-1000",
+      "targets": [],
+      "value": "label=x1"
+    }, {
+      "id": "d199ca46-a8da-4e6f-aa6c-b34ecef8dbd8",
+      "comment": "",
+      "command": "click",
+      "target": "id=qtyTextBox",
+      "targets": [
+        ["id=qtyTextBox", "id"],
+        ["name=quantity", "name"],
+        ["css=#qtyTextBox", "css:finder"],
+        ["xpath=//input[@id='qtyTextBox']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[6]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbb680a5-99f6-40e0-bcbf-9bd663b3cfcb",
+      "comment": "",
+      "command": "click",
+      "target": "id=qtyTextBox",
+      "targets": [
+        ["id=qtyTextBox", "id"],
+        ["name=quantity", "name"],
+        ["css=#qtyTextBox", "css:finder"],
+        ["xpath=//input[@id='qtyTextBox']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[6]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e676d6e2-0ea5-4eef-af0a-2f77278fab67",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,29)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3aee255b-dd44-4dfb-84e1-9b4f17671198",
+      "comment": "",
+      "command": "type",
+      "target": "id=qtyTextBox",
+      "targets": [
+        ["id=qtyTextBox", "id"],
+        ["name=quantity", "name"],
+        ["css=#qtyTextBox", "css:finder"],
+        ["xpath=//input[@id='qtyTextBox']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[6]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "985c0e8f-2419-428e-80bb-9029b8bdf5eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=binBtn_btn_1",
+      "targets": [
+        ["id=binBtn_btn_1", "id"],
+        ["linkText=Buy It Now", "linkText"],
+        ["css=#binBtn_btn_1", "css:finder"],
+        ["xpath=//a[@id='binBtn_btn_1']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div[2]/ul/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ebay.ca/atc/binctr?item=124065614031&quantity=1&var=424896252863&fromPage=4429486&rev=38&fb=1&gch=1')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Buy It Now')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "822b7e6c-3c49-407c-9862-e6933c228aec",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#qtyErrMsg > .ux-textspans",
+      "targets": [
+        ["css=#qtyErrMsg > .ux-textspans", "css:finder"],
+        ["xpath=//div[@id='qtyErrMsg']/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter a lower number')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64288495-09be-437d-8f66-191104740ab8",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.keyboard-trap--active",
+      "targets": [
+        ["css=.keyboard-trap--active", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div[2]/ul/li/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//li/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "5ae14abf-fc1c-42bd-b203-ead881b6d139",
@@ -322,6 +640,6 @@
     "timeout": 300,
     "tests": ["333f8316-ca6c-4002-ad92-25e54fbb003a"]
   }],
-  "urls": ["https://www.ebay.ca/itm/353416562260", "https://www.ebay.ca/itm/162228927728", "https://www.ebay.ca/"],
+  "urls": ["https://www.ebay.ca/itm/353416562260", "https://www.ebay.ca/itm/162228927728", "https://www.ebay.ca/", "https://github.com/", "https://www.ebay.ca/itm/335291084255", "https://www.ebay.ca/itm/335291084255sdfg", "https://www.ebay.ca/itm/124065614031"],
   "plugins": []
 }
