@@ -92,6 +92,17 @@
         ["xpath=//span/button/span/span", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "15c08dbc-fa6f-4e70-b161-8f93d72633af",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ux-call-to-action__text:nth-child(2)",
+      "targets": [
+        ["css=.ux-call-to-action__text:nth-child(2)", "css:finder"],
+        ["xpath=//span[@id='vi-atl-lnk-99']/button/span/span", "xpath:idRelative"],
+        ["xpath=//span/button/span/span", "xpath:position"]
+      ],
+      "value": "Watching"
     }]
   }, {
     "id": "6b943d87-8373-4781-ab77-f8e85c4bb46a",
@@ -183,6 +194,18 @@
         ["xpath=//span/span/button/span", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "04763ba4-efba-4416-9300-69a26f6caf22",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.faux-link",
+      "targets": [
+        ["css=.faux-link", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div/div/div/div[2]/div/div/span/span/span/span/button", "xpath:idRelative"],
+        ["xpath=//span/span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Saved')]", "xpath:innerText"]
+      ],
+      "value": "Saved"
     }]
   }, {
     "id": "8511542c-2064-4938-9a93-e5da1dd3fc1d",
@@ -246,6 +269,17 @@
         ["xpath=//button[contains(.,'Remove')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "c732e849-0505-4b2a-809b-060d87c3c7b5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-display-span span:nth-child(2)",
+      "targets": [
+        ["css=.text-display-span span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='page-alerts']/section/div[2]/h2/span/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span", "xpath:position"]
+      ],
+      "value": "was removed from your cart."
     }]
   }, {
     "id": "91612bc9-cb4c-4458-b5c9-725ba15d54a5",
@@ -349,6 +383,76 @@
         ["xpath=//button[contains(.,' Send')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "53c79c4c-4b42-45a9-82db-08995e665b1f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Tell us what you think",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b8232dde-d7c6-46e4-9da7-c35cbdef9c37",
+    "name": "invalid_feedback",
+    "commands": [{
+      "id": "d7f656e8-4676-4e22-a7ba-88ef59976f76",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e01cc0d-a5cf-4009-a53f-f88ac03f430c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c1ba149-0074-47b3-988b-7b36595427fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vl-feedback__survey",
+      "targets": [
+        ["css=.vl-feedback__survey", "css:finder"],
+        ["xpath=//body/div[6]/a/div", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3612",
+      "windowTimeout": 2000
+    }, {
+      "id": "c3e56e61-4d73-4ee8-8dd6-6ea409b9e0a9",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3612}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13042a0c-b779-484e-9df5-91a48de7ad47",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitFdbk",
+      "targets": [
+        ["id=submitFdbk", "id"],
+        ["css=#submitFdbk", "css:finder"],
+        ["xpath=//button[@id='submitFdbk']", "xpath:attributes"],
+        ["xpath=//div[@id='pg_0']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,' Send')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a72098a-3f81-4798-a441-b134ab640ff7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.rating-selector > .element-notice",
+      "targets": [
+        ["css=.rating-selector > .element-notice", "css:finder"],
+        ["xpath=//div[@id='q0']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "Please answer this question before sending."
     }]
   }],
   "suites": [{
